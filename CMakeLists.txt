@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8.12)
 project(dirent LANGUAGES C CXX)
 
 # User options
-option(DIRENT_BUILD_TESTS "Build bundled tests" ON)
+option(DIRENT_BUILD_TESTS "Build bundled tests" OFF)
 message(STATUS "Build test and example programs: ${DIRENT_BUILD_TESTS}")
 
 # Initialize C and C++ compilers

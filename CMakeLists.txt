@@ -8,6 +8,9 @@ message(STATUS "Build test and example programs: ${DIRENT_BUILD_TESTS}")
 # Initialize C and C++ compilers
 enable_language(C CXX)
 
+add_library(dirent INTERFACE)
+target_include_directories(dirent INTERFACE include)
+
 # Compile in debug mode by default
 if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Debug
